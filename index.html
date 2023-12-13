@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .required-field:invalid {
+      border: 1px solid red;
+    }
+
+    .required-field:valid {
+      border: 1px solid green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Form</h1>
+    <form>
+      <div class="mb-3">
+        <label for="inputText" class="form-label">Text Input</label>
+        <input type="text" class="form-control required-field" id="inputText" placeholder="Enter text" required>
+      </div>
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control required-field" id="inputEmail" placeholder="name@example.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="inputPassword" class="form-label">Password</label>
+        <input type="password" class="form-control required-field" id="inputPassword" placeholder="Password" required>
+      </div>
+      <div class="mb-3">
+        <label for="inputNumber" class="form-label">Number</label>
+        <input type="number" class="form-control required-field" id="inputNumber" placeholder="Enter number" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Textarea</label>
+        <textarea class="form-control required-field" id="exampleFormControlTextarea1" rows="3" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="inputFile" class="form-label">File input</label>
+        <input class="form-control required-field" type="file" id="inputFile" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="container mt-5">
+    <div class="card">
+      <img src="img/ikugB_Ig_400x400.jpg" class="card-img-top" alt="Placeholder Image">
+      <div class="card-body">
+        <h5 class="card-title">Sunset </h5>
+        <p class="card-text">Photo of sunset over the sea</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#customModal">
+      Open Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="customModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Custom Modal Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>This is a customized modal window. You can add any content here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Collapsible Group Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Content for the first collapsible panel .
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Collapsible Group Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Content for the second collapsible panel.
+          </div>
+        </div>
+      </div>
+      <!-- Add more accordion items as needed -->
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <h1 class="fw-bold">Responsive Typography Example</h1>
+
+    <p class="text-center">This paragraph is centered.</p>
+
+    <p class="text-uppercase">This text is in uppercase.</p>
+
+    <p class="text-muted">This is a muted text.</p>
+
+    <p class="text-primary">This text is in primary color.</p>
+
+    <p class="text-secondary">This text is in secondary color.</p>
+
+    <p class="text-danger">This text is in danger color.</p>
+
+    <p class="text-success">This text is in success color.</p>
+
+    <p class="text-warning">This text is in warning color.</p>
+
+    <p class="text-info">This text is in info color.</p>
+
+    <p class="text-dark">This text is in dark color.</p>
+
+    <p class="text-white bg-dark">This text is in white color on a dark background.</p>
+
+    <p class="fs-5">This text is larger than normal.</p>
+
+    <p class="fs-6">This text is smaller than normal.</p>
+
+    <p class="fst-italic">This text is italicized.</p>
+
+    <p class="fw-normal">This text has normal font weight.</p>
+
+    <p class="fw-light">This text has light font weight.</p>
+
+    <p class="fw-bold">This text has bold font weight.</p>
+
+    <p class="mb-4">This paragraph has a bottom margin.</p>
+
+    <p class="mt-4">This paragraph has a top margin.</p>
+
+    <p class="mx-3">This paragraph has horizontal margins.</p>
+
+    <p class="my-3">This paragraph has vertical margins.</p>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
